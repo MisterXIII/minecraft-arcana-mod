@@ -4,3 +4,7 @@ pluginManagement {
         maven { url = 'https://maven.minecraftforge.net/' }
     }
 }
+include 'src:main:java'
+findProject(':src:main:java')?.name = 'java'
+include 'Arcana'
+
